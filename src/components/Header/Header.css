@@ -4,6 +4,8 @@
     justify-content: center;
     justify-content: space-between;
     font-size: x-large;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .navbar a {
@@ -26,10 +28,11 @@
     flex-direction: row;
     padding-left: 30px;
     padding-right: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
     justify-content: space-between;
-    background-image: linear-gradient(90deg, white, #e3e5e8, #fff);
+    background-image: linear-gradient(90deg, white, #cfd7dc, #fff);
 }
-
 .header-text {
     font-size: xx-large;
 }
@@ -39,8 +42,9 @@
 }
 
 .header-img img {
-    height: 600px;
+    height: 450px;
     width: 100%;
+    border-radius: 10px;
 }
 
 @media (max-width: 980px) {
@@ -79,8 +83,7 @@
     }
 
     .header-img img {
-        margin-top: 20px;
-        height: 450px;
+        height: 420px;
         width: 100%;
     }
 }

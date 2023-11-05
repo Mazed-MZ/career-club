@@ -17,7 +17,7 @@ export default function Header() {
     <div className='header-container'>
       <div className='header-text'>
         <h1>One Step <br /> Closer To Your <br /><span style={{ color: '#7E90FE' }}>Dream Job</span></h1>
-        <p>Explore thousands of job opportunities with <br /> all the information you need. Its your future. <br /> Come find it. Manage all your job <br /> application from start to finish.</p>
+        <p>Explore thousands of job opportunities with all the information you need. <br /> Its your future. Come find it. Manage all your job application from start to finish.</p>
         <span className='button'>
           <ColorButton variant="contained">Get Started</ColorButton>
         </span>
