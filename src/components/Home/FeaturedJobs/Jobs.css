@@ -1,0 +1,43 @@
+.job-container {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.job-header {
+    text-align: center;
+}
+.job-carts{
+    display: grid;
+    grid-template-columns: repeat(2, 700px);
+    justify-content: center;
+}
+.job-box{
+    border: 1px solid rgb(178, 178, 178);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 1%;
+}
+.job-data img{
+    height: 100px;
+    width: 200pxpx;
+}
+.job-data span{
+    display: flex;
+    flex-direction: row;
+}
+.job-data span p{
+    color: gray;
+    margin-right: 30px;
+}
+.job-data h3{
+    color: lightgray;
+}
+.details-btn{
+    background-image: linear-gradient(90deg, rgb(231, 13, 187), #c84be7);
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+.details-btn:hover{
+    background-image: linear-gradient(90deg, #c84be7, rgb(231, 13, 187));
+}
