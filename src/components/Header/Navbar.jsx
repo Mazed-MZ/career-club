@@ -19,7 +19,7 @@ export default function Navbar() {
                 <Link to='/home'><a><h3>Career Club</h3></a></Link>
                 <div className='nav-link'>
                     <Link to='/'><a>Statistics</a></Link>
-                    <Link to='/'><a>Applied Jobs</a></Link>
+                    <Link to='/appliedjobs'><a>Applied Jobs</a></Link>
                     <Link to='/'><a>Blog</a></Link>
                 </div>
                 <ColorButton variant="contained" sx={{m:4}}>Start Applying</ColorButton>
