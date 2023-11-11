@@ -33,13 +33,17 @@
     color: lightgray;
 }
 .details-btn{
-    background-image: linear-gradient(90deg, rgb(231, 13, 187), #c84be7);
+    border: 1px solid #c84be7;
     border-radius: 5px;
     padding: 10px;
-    color: white;
+    width: 110px;
+    font-weight: bold;
 }
 .details-btn:hover{
-    background-image: linear-gradient(90deg, #c84be7, rgb(231, 13, 187));
+    background-color: #c84be7;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    color: #fff;
 }
 
 @media (max-width: 980px) {
