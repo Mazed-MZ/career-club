@@ -1,0 +1,35 @@
+.payment-container {
+    border-radius: 10px;
+    margin-top: 200px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(217, 222, 253);
+}
+.payment-container img{
+    width: 300px;
+}
+
+.payment-cart-info{
+    display: flex;
+    flex-direction: row;
+    margin: 3%;
+    justify-content: space-around;
+}
+
+.payment-cart-data {
+    padding: 1%;
+    width: 100%;
+    margin: 3%;
+    text-align: left;
+    border-top: 3px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-radius: 10px;
+}
+
+.payment-cart-data h4 {
+    color: gray;
+}

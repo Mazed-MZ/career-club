@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Jobs.css';
 import JobCart from './JobCart';
 import { addToDb, getShoppingCart } from '../../../utilities/fakedb';
+import { json } from 'react-router';
 
 export default function Jobs() {
     const [jobs, setJobs] = useState([]);
@@ -32,7 +33,6 @@ export default function Jobs() {
                 //step-4 add the savedProduct to the savedCart
                 // savedProduct.stock = savedProduct.stock - quantity;
                 savedCart.push(savedProduct);
-                console.log(savedCart);
             }
             // console.log('added product', savedProduct);
 
@@ -56,7 +56,6 @@ export default function Jobs() {
             newCart = [...remaining, exists];
         }
         setSelectedJob(newCart);
-        console.log(exists);
         addToDb(exists.id)
     }
 

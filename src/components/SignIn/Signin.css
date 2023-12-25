@@ -1,0 +1,117 @@
+.content{
+    width: 500px;
+    text-align: center;
+    padding: 60px 32px;
+    background: rgba(37, 37, 37, 0.769);
+}
+.content h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 33px;
+    margin: 0 0 35px 0;
+    font-family: 'Montserrat',sans-serif;
+}
+.field{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    background: rgba(255, 255, 255, 0.94);
+}
+.field input{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #222;
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+}
+.field span{
+    color: #222;
+    width: 40px;
+    line-height: 45px;
+}
+.text{
+    margin: 10px 0;
+}
+.text p{
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+}
+.text a{
+    color: greenyellow;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+}
+.space{
+    margin-top: 16px;
+}
+input[type='submit']{
+    background: black;
+    border: 1px solid green;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Montserrat',sans-serif;
+    transition: 0.25s ease-in;
+}
+input[type='submit']:focus{
+    background: #34984b;
+    border: 1px solid #2691d9;
+    color: #fff;
+    margin: 0 130px 0 130px;
+}
+.show{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.another-login{
+    color: #fff;
+    margin: 20px 0;
+    font-family: 'Poppins',sans-serif;
+}
+.link-btn{
+    display: flex;
+    cursor: pointer;
+    color: #fff;
+    margin: 0 0 20px 0;
+}
+.link-btn i{
+    font-size: 17px;
+}
+.link-btn span{
+    font-size: 16px;
+    margin-left: 8px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: 'Poppins',sans-serif;
+}
+.google-btn, .fb-btn{
+    width: 100%;
+    height: 42px;
+    line-height: 45px;
+    margin-top: 10px;
+    border-radius: 24px;
+}
+.fb-btn{
+    background: #4267B2;
+}
+.google-btn{
+    background:linear-gradient(60deg, red, yellow, green);
+    color: #000;
+}
+
+@media (max-width: 980px) {
+    .content{
+        width: 350px;
+        border-radius: 10px;
+        background: rgba(61, 9, 81, 0.769);
+    }
+}

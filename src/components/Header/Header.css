@@ -22,6 +22,16 @@
     text-decoration: none;
     font-size: smaller;
 }
+.notice-bar{
+    display: flex;
+    margin-top: 10%;
+    margin-left: 7%;
+    color: #fff;
+    background-image: linear-gradient(90deg, #fff, #000, #000, #000, #000, #fff);
+    border: 3px solid purple;
+    border-radius: 20px;
+    width: 85%;
+}
 
 .header-container {
     display: flex;
@@ -30,6 +40,7 @@
     padding-right: 30px;
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 3%;
     justify-content: space-between;
     background-image: linear-gradient(90deg, white, #cfd7dc, #fff);
 }
@@ -42,7 +53,7 @@
 }
 
 .header-img img {
-    height: 450px;
+    height: 500px;
     width: 100%;
     border-radius: 10px;
 }
@@ -62,6 +73,11 @@
     .button {
         border-radius: 10px;
         font-size: medium;
+    }
+    .notice-bar{
+        margin-top: 30%;
+        margin-left: 2%;
+        width: 95%;
     }
     .header-container {
         display: flex;
@@ -85,5 +101,6 @@
     .header-img img {
         height: 420px;
         width: 100%;
+        margin-top: 10%;
     }
 }

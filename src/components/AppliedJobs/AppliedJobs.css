@@ -1,52 +1,71 @@
-.review-cart{
+.review-cart {
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 10%;
 }
-.review-box{
+
+.review-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
+    background-image: linear-gradient(90deg, rgba(209, 207, 209, 0.5), rgba(244, 143, 244, 0.75));
     border: 3px solid rgb(232, 227, 227);
     margin: 30px;
 }
-.review-box:hover{
+
+.review-box:hover {
     border: 3px solid purple;
     transition: .6s ease-in-out;
 }
-.review-data{
+
+.review-data {
     display: flex;
     flex-direction: row;
 }
-.review-data img{
+
+.review-data img {
     height: 200px;
     width: 400px;
     padding-top: 70px;
 }
-.review-items{
+
+.review-items {
     margin: 40px;
 }
-button a{
+
+button a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
+.button-group{
+    padding: 1%;
+}
+
 @media (max-width: 980px) {
-    .review-cart{
+    .review-cart {
         margin-left: 0%;
         margin-right: 0%;
+        margin-top: 30%;
     }
-    .review-data{
+
+    .review-data {
         display: flex;
         flex-direction: column;
     }
-    .review-data img{
+
+    .review-data img {
         height: 200px;
         width: 400px;
         padding: 30px;
     }
-    .review-items{
+    .review-items {
         margin: 40px;
+    }
+    .button-group{
+        padding-left: 20%;
+        padding-right: 20%;
     }
 }

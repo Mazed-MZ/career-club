@@ -14,7 +14,6 @@ export default function JobDetails() {
       setRemove(remaining);
       removeFromDb(id)
   };
-    console.log(storedJob)
 
     // useEffect(() => {
     //     const storedCart = getShoppingCart();

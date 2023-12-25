@@ -1,0 +1,84 @@
+.about-container {
+    color: #fff;
+    font-weight: 500;
+}
+
+.about-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://www.jobure.com/wp-content/uploads/2020/06/In-this-blog-well-teach-you-some-crucial-team-leader-interview-questions-and-answers.-1100x800-1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-header-info {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding-left: 20%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+}
+.about-description {
+    padding-left: 100px;
+}
+
+.about-header-logo img {
+    border-radius: 120px;
+}
+
+.about-featurs {
+    background-image: linear-gradient(90deg, rgba(149, 3, 108, 0.75), rgba(149, 3, 108, 0.75), rgba(0,0,0,0));
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.about-feature-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-feature-description {
+    background-image: linear-gradient(90deg, rgba(0,0,0,0), rgba(149, 3, 108, 0.75), rgba(109, 22, 84, 0.75), rgba(0,0,0,0));
+    width: 700px;
+    position: absolute;
+    left: 15%;
+    padding-top: 3%;
+    padding-bottom: 4.8%;
+    z-index: 2;
+}
+
+.about-feature-details {
+    margin-top: 8%;
+}
+
+.about-feature-logo {
+    padding-left: 40%;
+    margin-bottom: 3%;
+}
+
+.about-feature-logo img{
+    width: 975px;
+    height: 575px;
+}
+.about-founder{
+    padding: 5%;
+    background-color: black;
+}
+.about-founder-details{
+    display: flex;
+    flex-direction: row;
+}
+.about-founder-image{
+    border: 3px solid violate;
+}
+.about-founder-image img{
+    width: 600px;
+}
+.about-founder-info{
+    color: white;
+    margin-top: 10%;
+    line-height: 185%;
+    margin-right: 15%;
+
+}
