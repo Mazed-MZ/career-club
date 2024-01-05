@@ -15,7 +15,7 @@ export default function SignUp() {
 
     const { googleSignin } = useContext(UserContext);
     const navigate = useNavigate();
-    const from = location.state?.from?.pathname || '/home';
+    const from = location.state?.from?.pathname || '/';
     console.log(from)
 
     const GoogleColorButton = styled(Button)(({ theme }) => ({

@@ -1,18 +1,20 @@
 import React, { useContext, useState } from "react";
 import "./Signin.css";
 import app from "../Firebase/firebase.config";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider } from "firebase/auth";
 import { UserContext, auth } from "../providers/AuthProvider";
 import { useLocation, useNavigate } from "react-router";
 
+const provider = new GoogleAuthProvider();
+
 export default function Signin() {
 
-    const { user, signinwithpass } = useContext(UserContext);
+    const { user, signinwithpass, googleSignin } = useContext(UserContext);
 
     const navigate = useNavigate();
     const location = useLocation();
     console.log(location);
-    const from = location.state?.from?.pathname || '/home';
+    const from = location.state?.from?.pathname || '/';
 
     const handleEmailChange = (event) => {
         // console.log(event.target.value)
@@ -36,6 +38,29 @@ export default function Signin() {
                 const errorCode = error.code;
                 const errorMessage = error.message;
                 console.log(errorMessage);
+            });
+    }
+
+    const handleGoogleSignin = () => {
+        googleSignin(provider)
+            .then((result) => {
+                // This gives you a Google Access Token. You can use it to access the Google API.
+                const credential = GoogleAuthProvider.credentialFromResult(result);
+                const token = credential.accessToken;
+                // The signed-in user info.
+                const user = result.user;
+                navigate(from, { replace: true });
+                // IdP data available using getAdditionalUserInfo(result)
+                // ...
+            }).catch((error) => {
+                // Handle Errors here.
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // The email of the user's account used.
+                const email = error.customData.email;
+                // The AuthCredential type that was used.
+                const credential = GoogleAuthProvider.credentialFromError(error);
+                // ...
             });
     }
 
@@ -65,7 +90,7 @@ export default function Signin() {
                             </div>
                         </div>
                         <div className='link-btn'>
-                            <div className='google-btn'>
+                            <div className='google-btn' onClick={handleGoogleSignin}>
                                 <i className='fab fa-google'></i><span>Continue with Google</span>
                             </div>
                         </div>

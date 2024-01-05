@@ -61,7 +61,7 @@ export default function Navbar() {
                     <Container maxWidth="xl">
                         <Toolbar disableGutters>
                             <IconButton onClick={handleOpenUserMenu}>
-                                <Link to="/home"><img alt="Career Club" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWNASt50W1KrN707n1pipa2eS-j4vWM7Vf8A&usqp=CAU" style={{ borderRadius: 120, width: 80 }} /></Link>
+                                <Link to="/"><img alt="Career Club" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWNASt50W1KrN707n1pipa2eS-j4vWM7Vf8A&usqp=CAU" style={{ borderRadius: 120, width: 80 }} /></Link>
                             </IconButton>
                             <Typography
                                 variant="h6"
@@ -79,7 +79,7 @@ export default function Navbar() {
                                     textDecoration: 'none',
                                 }}
                             >
-                                <Link to="/home">Career Club</Link>
+                                <Link to="/">Career Club</Link>
                             </Typography>
 
                             {/* ---->>>> Mobile Device <<<<---- */}
@@ -121,7 +121,7 @@ export default function Navbar() {
                                     <Link to="/jobs" style={{ textDecoration: 'none', color: 'black' }}><MenuItem key="" onClick={handleCloseNavMenu}>
                                         <Typography textAlign="center">Jobs</Typography>
                                     </MenuItem></Link>
-                                    <Link to="/" style={{ textDecoration: 'none', color: 'black' }}><MenuItem key="" onClick={handleCloseNavMenu}>
+                                    <Link to="/notice" style={{ textDecoration: 'none', color: 'black' }}><MenuItem key="" onClick={handleCloseNavMenu}>
                                         <Typography textAlign="center">Notice</Typography>
                                     </MenuItem></Link>
                                 </Menu>
@@ -176,7 +176,7 @@ export default function Navbar() {
                                     onClick={handleCloseNavMenu}
                                     sx={{ my: 3, mx: 3, color: 'white', display: 'block' }}
                                 >
-                                    <Link to="/">Notice</Link>
+                                    <Link to="/notice">Notice</Link>
                                 </Button>
                             </Box>
 
@@ -206,7 +206,7 @@ export default function Navbar() {
                                         open={Boolean(anchorElUser)}
                                         onClose={handleCloseUserMenu}
                                     >
-                                        <Link to="/" style={{ textDecoration: 'none', color: 'black' }}><MenuItem key="" onClick={handleCloseUserMenu}>
+                                        <Link to="/profile" style={{ textDecoration: 'none', color: 'black' }}><MenuItem key="" onClick={handleCloseUserMenu}>
                                             <Typography textAlign="center">Profile</Typography>
                                         </MenuItem></Link>
                                         <Link to="/" style={{ textDecoration: 'none', color: 'black' }}><MenuItem key="" onClick={handleCloseUserMenu}>

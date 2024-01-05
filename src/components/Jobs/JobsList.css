@@ -1,5 +1,7 @@
 .joblist-container{
     padding-top: 150px;
+    text-align: center;
+    padding-bottom: 50px;
 }
 .joblist-header {
     text-align: center;
@@ -34,7 +36,7 @@
     border: 1px solid #c84be7;
     border-radius: 5px;
     padding: 10px;
-    width: 110px;
+    width: 100%;
     font-weight: bold;
 }
 .apply-btn:hover{
@@ -80,8 +82,8 @@
         background-image: linear-gradient(90deg, rgb(231, 13, 187), #c84be7);
         padding: 5px;
         color: white;
-        width: 80px;
-        height: 30px;
+        width: 100%;
+        height: 32px;
     }
     .apply-btn:hover{
         background-image: linear-gradient(90deg, #c84be7, rgb(231, 13, 187));

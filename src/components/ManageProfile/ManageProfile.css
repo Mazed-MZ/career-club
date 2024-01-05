@@ -1,0 +1,72 @@
+.profile-container {
+    padding-top: 10%;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.profile-container img {
+    border-radius: 60px;
+    border: 3px solid darkviolet;
+    width: 7%;
+}
+
+.profile-manue {
+    display: flex;
+    border: 3px solid darkmagenta;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.job-input {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 10px 20px 20px lightgray;
+    padding: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.job-form {
+    display: grid;
+    column-gap: 100px;
+    grid-template-columns: auto auto auto;
+    padding: 1%;
+    width: 100%;
+}
+
+@media (max-width: 980px) {
+    .profile-container {
+        padding-top: 40%;
+        text-align: center;
+        padding-bottom: 20%;
+    }
+    
+    .profile-container img {
+        display: none;
+    }
+    
+    .profile-manue {
+        display: flex;
+        border: none;
+        gap: 30px;
+        flex-direction: column;
+        padding: 10%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+    .job-input {
+        padding: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .job-form {
+        display: flex;
+        flex-direction: column;
+        margin: -7%;
+    }
+}

@@ -18,7 +18,7 @@ export default function JobCart({ jobInfo, handleJobCart }) {
                 <span>
                     <p><FontAwesomeIcon icon={faLocationCrosshairs} /> {location}</p> <p><FontAwesomeIcon icon={faMoneyBill} /> {salary}</p>
                 </span>
-                <Stack spacing={2} direction="row">
+                <Stack spacing={1} direction="row">
                     <Chip label={type} color="primary" variant="outlined" />
                     <Chip label={duration} color="success" variant="outlined" />
                     <button className='details-btn' onClick={() => handleJobCart(id)}>Apply</button>

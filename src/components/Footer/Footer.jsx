@@ -20,22 +20,22 @@ export default function Footer() {
                 <div className='footer-links'>
                     <h4>Company</h4>
                     <a href="/aboutus">About us</a>
-                    <a href="/home">Latest News</a>
-                    <a href="/home">Work</a>
-                    <a href="/home">Careers</a>
+                    <a href="/">Latest News</a>
+                    <a href="/">Work</a>
+                    <a href="/">Careers</a>
                 </div>
                 <div className='footer-links'>
                     <h4>Product</h4>
-                    <a href="/home">Plans & Pricing</a>
-                    <a href="/home">Prototype</a>
-                    <a href="/home">Customers</a>
-                    <a href="/home">Integrations</a>
+                    <a href="/">Plans & Pricing</a>
+                    <a href="/">Prototype</a>
+                    <a href="/">Customers</a>
+                    <a href="/">Integrations</a>
                 </div>
                 <div className='footer-links'>
                     <h4>Support</h4>
-                    <a href="/home">Help Desk</a>
-                    <a href="/home">Sales</a>
-                    <a href="/home">Become a Partner</a>
+                    <a href="/">Help Desk</a>
+                    <a href="/">Sales</a>
+                    <a href="/">Become a Partner</a>
                     <a href="/home">Developers</a>
                 </div>
                 <div className='footer-links'>
